@@ -1,6 +1,4 @@
-{ 
-   "name":"Token",
-  "symbol":"token",
+{
   "description":"this is a test token",
-  "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg600Xa4ws6jp54kMDNGYF232lIhY51QJqEA&s"
+  "image":"https://asset.cloudinary.com/dga3hc14e/b943800390f069909da07b9d371cefcd"
 }
