@@ -1,4 +1,6 @@
 {
+  "name":"Token",
+  "symbol":"Token",
   "description":"this is a test token",
   "image":"https://asset.cloudinary.com/dga3hc14e/b3f9819aae9de7221735d64230b2da78"
 }
