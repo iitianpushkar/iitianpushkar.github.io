@@ -521,6 +521,14 @@ figcaption {
   max-width: 68ch;
 }
 
+.mentor-line {
+  margin: 0 0 0.45rem;
+  color: var(--text-color);
+  font-size: 0.88rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
 /* Projects */
 .project-grid {
   display: grid;
