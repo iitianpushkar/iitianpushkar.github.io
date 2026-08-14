@@ -14,15 +14,24 @@
     />
     <meta property="og:type" content="website" />
     <title>Pushkar Kumar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header id="profileHeader">
-      <nav class="navbar">
-        <a class="navbar-brand" href="#top">Pushkar Kumar</a>
-        <div class="navbar-nav" aria-label="Primary navigation">
-          <a href="#about">About</a>
-          <a href="#news">News</a>
+      <nav class="navbar animate">
+        <a class="navbar-brand primary-font" href="#top">Pushkar Kumar</a>
+        <div class="navbar-nav primary-font" aria-label="Primary navigation">
+          <a href="#about">About Me</a>
           <a href="#experience">Experience</a>
           <a href="#research">Research</a>
           <a href="#projects">Projects</a>
@@ -33,185 +42,215 @@
 
     <main id="top">
       <section id="hero" class="container hero-grid">
-        <div class="hero-content animate">
+        <div class="hero-content primary-font animate">
           <span class="subtitle">Hi, my name is</span>
-          <h1>Pushkar Kumar</h1>
-          <h2>Researcher in Quantum, Blockchain & AI Systems</h2>
-          <p>
-            Undergrad researcher at IIT Roorkee. I work on distributed quantum computing,
-            low-resource blockchain protocols, multimodal AI robustness, and scientific machine
-            learning.
+          <h1>Pushkar</h1>
+          <h2>Researcher in AI, Blockchain &amp; Quantum Systems</h2>
+          <p class="secondary-font">
+            Undergrad, researcher and open-source contributor. I like working on AI, Blockchain, distributed quantum computing,
+            cryptography and compilers.
           </p>
 
           <div class="hero-actions">
-            <a class="resume-link" href="assets/Pushkar_Kumar_Resume.pdf">Resume</a>
-            <div class="social-links" aria-label="Social links">
-              <a href="https://github.com/0xpushkar" aria-label="GitHub">GH</a>
-              <a href="mailto:pushkarsingh0587@gmail.com" aria-label="Email">Mail</a>
-              <a href="#contact" aria-label="Contact">Contact</a>
-            </div>
+            <a
+              class="social-icon"
+              href="assets/Pushkar_Kumar_Resume.pdf"
+              download
+              title="Resume"
+              aria-label="Resume"
+            >
+              <i class="fas fa-file-lines" aria-hidden="true"></i>
+            </a>
+            <a
+              class="social-icon"
+              href="https://github.com/0xpushkar"
+              target="_blank"
+              rel="noopener"
+              title="GitHub"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a
+              class="social-icon"
+              href="mailto:pushkarsingh0587@gmail.com"
+              title="Email"
+              aria-label="Email"
+            >
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
 
         <figure class="hero-image animate">
-          <div class="portrait-card" role="img" aria-label="Portrait placeholder for Pushkar Kumar">
-            <span>PK</span>
-          </div>
-          <figcaption>Figure 1: IIT Roorkee - research and systems engineering</figcaption>
+          <img src="assets/me.jpeg" alt="Pushkar Kumar" width="522" height="1160" />
+          <figcaption>Figure 1: IIT Roorkee — research and systems engineering</figcaption>
         </figure>
       </section>
 
       <section id="about" class="container section">
-        <h3>About Me</h3>
-        <div class="about-layout">
-          <figure class="about-image">
-            <div class="round-visual" aria-hidden="true">
-              <span>BS-MS</span>
-            </div>
-            <figcaption>Figure 2: Physics at IIT Roorkee</figcaption>
-          </figure>
-          <div class="content">
-            <p>
-              I am pursuing BS-MS Physics at the Indian Institute of Technology Roorkee. I like
-              problems where theory has to survive contact with real systems: simulators, protocol
-              tools, AI-assisted workflows, privacy infrastructure, and deep learning pipelines for
-              scientific data.
-            </p>
-            <p>
-              My current work spans low-resource validator protocols at KU Leuven, test-time
-              adaptation for speech and multimodal emotion recognition, and distributed quantum
-              computing simulation through QIntern 2026.
-            </p>
-          </div>
+        <h3 class="primary-font">About Me</h3>
+        <div class="content about-content secondary-font">
+          <p>
+            I am pursuing BS-MS Physics at the Indian Institute of Technology Roorkee. I like
+            problems where theory has to survive contact with real systems: simulators, protocol
+            tools, AI-assisted workflows, privacy infrastructure and deep learning pipelines for
+            scientific data.
+          </p>
+          <p>
+            My current work spans low-resource blockchain validator protocols, test-time adaptation
+            for speech and multimodal emotion recognition and distributed quantum computing
+            simulation.
+          </p>
         </div>
       </section>
 
       <section id="news" class="container section compact">
-        <h3>Latest News</h3>
+        <h3 class="primary-font">Latest News</h3>
         <ul class="news-list">
-          <li><span>Aug 2026</span> Started as a Research Assistant at KU Leuven.</li>
-          <li><span>Jul 2026</span> Began research on test-time adaptation for multimodal emotion recognition.</li>
-          <li><span>Jul 2026</span> Selected for QIntern 2026 to work on distributed quantum computing simulation.</li>
-          <li><span>May 2026</span> Started summer research on CT image reconstruction at IIT Roorkee.</li>
+          <li class="news-item">
+            <span class="news-date">Aug 2026</span>
+            <span class="news-content">Started as a Research Assistant at KU Leuven.</span>
+          </li>
+          <li class="news-item">
+            <span class="news-date">Jul 2026</span>
+            <span class="news-content"
+              >Began research on test-time adaptation for multimodal emotion recognition.</span
+            >
+          </li>
+          <li class="news-item">
+            <span class="news-date">Jul 2026</span>
+            <span class="news-content"
+              >Selected for QIntern 2026 to work on distributed quantum computing simulation.</span
+            >
+          </li>
         </ul>
       </section>
 
       <section id="experience" class="container section">
-        <h3>Experience</h3>
-        <div class="timeline">
+        <h3 class="primary-font">Experience</h3>
+        <div class="timeline-container">
           <article class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-card">
-              <div class="item-header">
-                <div>
-                  <h4>Research Assistant</h4>
-                  <a href="https://www.kuleuven.be/english/kuleuven">KU Leuven</a>
+            <div class="timeline-dot"></div>
+            <div class="experience-card">
+              <div class="job-header">
+                <div class="job-info">
+                  <h3 class="primary-font">Research Assistant</h3>
+                  <a href="https://www.kuleuven.be/english/kuleuven" class="company-name"
+                    >KU Leuven</a
+                  >
                 </div>
-                <time>Aug 2026 - Present</time>
+                <div class="job-date">Aug 2026 — Present</div>
               </div>
-              <p>
+              <div class="job-content secondary-font">
                 Exploring low-resource blockchain validator protocols, focusing on state sharing,
                 uneven node storage, incentive layers, and 1-to-n payment channel designs.
-              </p>
+              </div>
             </div>
           </article>
 
           <article class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-card">
-              <div class="item-header">
-                <div>
-                  <h4>Research Collaboration</h4>
-                  <span>Remote Independent Research</span>
+            <div class="timeline-dot"></div>
+            <div class="experience-card">
+              <div class="job-header">
+                <div class="job-info">
+                  <h3 class="primary-font">Research Collaboration</h3>
+                  <span class="company-name plain">Remote Independent Research</span>
                 </div>
-                <time>Jul 2026 - Present</time>
+                <div class="job-date">Jul 2026 — Present</div>
               </div>
-              <p>
+              <div class="job-content secondary-font">
                 Exploring test-time adaptation for speech and multimodal emotion recognition under
                 speaker, domain, and modality shifts.
-              </p>
+              </div>
             </div>
           </article>
 
           <article class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-card">
-              <div class="item-header">
-                <div>
-                  <h4>Research Intern</h4>
-                  <span>QIntern 2026, QWorld</span>
+            <div class="timeline-dot"></div>
+            <div class="experience-card">
+              <div class="job-header">
+                <div class="job-info">
+                  <h3 class="primary-font">Research Intern</h3>
+                  <span class="company-name plain">QIntern 2026, QWorld</span>
                 </div>
-                <time>Jul 2026 - Aug 2026</time>
+                <div class="job-date">Jul 2026 — Aug 2026</div>
               </div>
-              <p>
+              <div class="job-content secondary-font">
                 Developing a network-aware orchestration and simulation tool for distributed quantum
                 computing by extending the open-source iQuantum simulator in Java.
-              </p>
+              </div>
             </div>
           </article>
 
           <article class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-card">
-              <div class="item-header">
-                <div>
-                  <h4>Summer Research Intern</h4>
-                  <span>Physics Department, IIT Roorkee</span>
+            <div class="timeline-dot"></div>
+            <div class="experience-card">
+              <div class="job-header">
+                <div class="job-info">
+                  <h3 class="primary-font">Summer Research Intern</h3>
+                  <span class="company-name plain">Physics Department, IIT Roorkee</span>
                 </div>
-                <time>May 2026 - Jul 2026</time>
+                <div class="job-date">May 2026 — Jul 2026</div>
               </div>
-              <p>
+              <div class="job-content secondary-font">
                 Worked on CT image reconstruction using CNNs and physics-inspired PyTorch pipelines
                 for medical imaging applications.
-              </p>
+              </div>
             </div>
           </article>
         </div>
       </section>
 
       <section id="research" class="container section">
-        <h3>Research Interests</h3>
+        <h3 class="primary-font">Research Interests</h3>
         <div class="publication-grid">
           <article class="publication-card">
             <div class="publication-image quantum-visual"></div>
             <div class="publication-content">
-              <h4>Distributed Quantum Computing</h4>
-              <p class="meta">Simulation / orchestration / quantum networks</p>
-              <p>
+              <h5 class="publication-title primary-font">Distributed Quantum Computing</h5>
+              <div class="publication-meta">
+                <span class="venue">Simulation / orchestration / quantum networks</span>
+              </div>
+              <div class="publication-summary secondary-font">
                 Network-aware orchestration for distributed quantum processors, simulator design,
                 interactive visualization, and execution across networked quantum resources.
-              </p>
+              </div>
             </div>
           </article>
 
           <article class="publication-card">
             <div class="publication-image validator-visual"></div>
             <div class="publication-content">
-              <h4>Low-Resource Validators</h4>
-              <p class="meta">Blockchain protocols / incentives / storage</p>
-              <p>
+              <h5 class="publication-title primary-font">Low-Resource Validators</h5>
+              <div class="publication-meta">
+                <span class="venue">Blockchain protocols / incentives / storage</span>
+              </div>
+              <div class="publication-summary secondary-font">
                 Protocol designs for constrained validators, uneven node storage, state sharing,
                 incentive mechanisms, and scalable payment channel patterns.
-              </p>
+              </div>
             </div>
           </article>
 
           <article class="publication-card">
             <div class="publication-image ai-visual"></div>
             <div class="publication-content">
-              <h4>Robust Multimodal AI</h4>
-              <p class="meta">Speech / emotion recognition / adaptation</p>
-              <p>
-                Test-time adaptation for models that must remain reliable under speaker, domain,
-                and modality shifts.
-              </p>
+              <h5 class="publication-title primary-font">Robust Multimodal AI</h5>
+              <div class="publication-meta">
+                <span class="venue">Speech / emotion recognition / adaptation</span>
+              </div>
+              <div class="publication-summary secondary-font">
+                Test-time adaptation for models that must remain reliable under speaker, domain, and
+                modality shifts.
+              </div>
             </div>
           </article>
         </div>
       </section>
 
       <section id="projects" class="container section">
-        <h3>Projects</h3>
+        <h3 class="primary-font">Projects</h3>
         <div class="project-grid">
           <article class="card">
             <div class="card-head architecture-visual"></div>
@@ -221,8 +260,8 @@
                 <span>Architecture</span>
                 <span>Simulation</span>
               </div>
-              <h4>RISC-V ISA Simulator</h4>
-              <p>
+              <h5 class="card-title primary-font">RISC-V ISA Simulator</h5>
+              <p class="secondary-font">
                 Modular RV32I simulator for single-cycle, multi-cycle, and 5-stage pipelined
                 processor models, including decoding, register files, memory, ALU execution, cache
                 behavior, and trace-based debugging.
@@ -238,8 +277,8 @@
                 <span>ZK</span>
                 <span>Cross-Chain</span>
               </div>
-              <h4>UniCloak</h4>
-              <p>
+              <h5 class="card-title primary-font">UniCloak</h5>
+              <p class="secondary-font">
                 Zero-knowledge privacy layer for stablecoin transactions, private swaps, bridging,
                 and cross-chain swaps using Noir circuits, Solidity contracts, WooFi, Stargate, and
                 an off-chain Merkle proof manager.
@@ -255,8 +294,8 @@
                 <span>AI</span>
                 <span>Payments</span>
               </div>
-              <h4>C2F.Pay</h4>
-              <p>
+              <h5 class="card-title primary-font">C2F.Pay</h5>
+              <p class="secondary-font">
                 AI-orchestrated crypto-to-fiat checkout where Claude Desktop coordinates merchant,
                 relayer, and Sei Wallet MCP servers while funds remain escrowed until fiat finality.
               </p>
@@ -271,8 +310,8 @@
                 <span>Chainlink</span>
                 <span>Assets</span>
               </div>
-              <h4>Stoxly</h4>
-              <p>
+              <h5 class="card-title primary-font">Stoxly</h5>
+              <p class="secondary-font">
                 Tokenized U.S. stocks protocol on Avalanche Fuji using Chainlink Functions, Price
                 Feeds, CCIP, Alpaca-backed off-chain orders, and natural-language wallet commands.
               </p>
@@ -282,8 +321,8 @@
       </section>
 
       <section id="achievements" class="container section compact">
-        <h3>Awards & Achievements</h3>
-        <div class="achievement-list">
+        <h3 class="primary-font">Awards &amp; Achievements</h3>
+        <div class="achievement-list secondary-font">
           <p>First Prize worth $10,500 in the ElizaOS track at the Chainlink Chromion Hackathon.</p>
           <p>Second Prize worth Rs.75,000 in the final round of the TriHacker Hackathon.</p>
           <p>Second Prize worth Rs.25,000 in the first round of the TriHacker Hackathon.</p>
@@ -295,15 +334,17 @@
       </section>
 
       <section id="community" class="container section">
-        <h3>Open Source & Community</h3>
+        <h3 class="primary-font">Open Source &amp; Community</h3>
         <div class="two-card-grid">
           <article class="mini-card">
-            <h4>LLVM Compiler Infrastructure</h4>
-            <p>Open source contributor through repository work and pull requests.</p>
+            <h4 class="primary-font">LLVM Compiler Infrastructure</h4>
+            <p class="secondary-font">
+              Open source contributor through repository work and pull requests.
+            </p>
           </article>
           <article class="mini-card">
-            <h4>Blockchain Society, IIT Roorkee</h4>
-            <p>
+            <h4 class="primary-font">Blockchain Society, IIT Roorkee</h4>
+            <p class="secondary-font">
               Core member of a student-led blockchain community focused on Web3 research,
               workshops, developer collaboration, and technical meetups.
             </p>
@@ -312,8 +353,8 @@
       </section>
 
       <section id="contact" class="container section compact contact">
-        <h3>Get in Touch</h3>
-        <p>
+        <h3 class="primary-font">Get in Touch</h3>
+        <p class="contact-intro secondary-font">
           My inbox is open for research collaborations, systems projects, and ambitious technical
           builds. Reach me at
           <a href="mailto:pushkarsingh0587@gmail.com">pushkarsingh0587@gmail.com</a>.
@@ -321,9 +362,23 @@
       </section>
     </main>
 
-    <footer class="container">
-      <p>2026 All rights reserved</p>
-      <p>Made for GitHub Pages</p>
+    <footer>
+      <div class="footer-social">
+        <a
+          href="https://github.com/0xpushkar"
+          aria-label="GitHub"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fab fa-github" aria-hidden="true"></i>
+        </a>
+        <a href="mailto:pushkarsingh0587@gmail.com" aria-label="Email">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="container footer-text">
+        <p>2026 All rights reserved</p>
+      </div>
     </footer>
 
     <script>
